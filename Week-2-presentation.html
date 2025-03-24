@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Sentinel-2: A Powerful Multispectral Sensor</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Luo Laoshi" />
+    <meta name="date" content="2025-03-24" />
+    <script src="libs/header-attrs-2.28/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Sentinel-2: A Powerful Multispectral Sensor
+]
+.author[
+### Luo Laoshi
+]
+.date[
+### 2025-03-24
+]
+
+---
+
+
+# Sentinel-2
+### A Powerful Multispectral Sensor for Urban &amp; Environmental Monitoring
+&lt;span style="font-size: 0.8em;"&gt;UCL CASA0023 – Week 2 Presentation&lt;/span&gt;
+
+---
+
+## What is Sentinel-2?
+
+- Twin satellites (Sentinel-2A &amp; 2B) launched by the European Space Agency under Copernicus Programme
+- 13 spectral bands (from visible to shortwave infrared)
+- Spatial resolutions: **10m**, **20m**, **60m** depending on band
+- Revisit time: **5 days**
+- Open and free data policy
+&lt;img src="1.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+&lt;p style="font-size: 0.6em; text-align: center;"&gt;
+Image source: &lt;a href="https://sentiwiki.copernicus.eu/web/s2-mission" target="_blank"&gt;Copernicus SentiWiki&lt;/a&gt;
+&lt;/p&gt;
+
+
+
+
+---
+
+## Why is Sentinel-2 special?
+
+- Combines **high spatial**, **temporal**, and **spectral resolution**
+- Covers large areas efficiently while maintaining detail
+- Especially valuable for urban, agricultural, and environmental monitoring
+
+&gt; I think Sentinel-2 stands out for its balance — not too coarse, not too slow, and very information-rich.
+
+---
+
+## Urban Monitoring Applications
+
+- Detecting **urban expansion**, land cover transitions, impervious surfaces
+- Used in cities like Lagos, Jakarta, London for detailed mapping
+- Time series analysis enables change detection across years
+
+&gt; Example: Forkuor et al. (2018) used Sentinel-2 for urban classification in West Africa with high accuracy.
+
+---
+
+## Agriculture &amp; Vegetation Monitoring
+
+- NDVI, EVI, NDWI and red-edge bands support crop health analysis
+- Short revisit time allows for **phenological tracking**
+- Helps predict yields, detect drought stress, and monitor forest degradation
+
+&gt; Sentinel-2 has become critical for precision agriculture.
+
+---
+
+## Machine Learning &amp; Land Cover Classification
+
+- Sentinel-2 often used with classifiers like **Random Forest** and **SVM**
+- Input for automated land cover products in platforms like **Google Earth Engine**
+- Useful in creating consistent, high-resolution land use maps
+
+&lt;img src="gee_interface.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+&lt;p style="font-size: 0.6em; text-align: center;"&gt;
+Image source: Gorelick et al. (2017)
+&lt;/p&gt;
+
+&gt; Sentinel-2 data works especially well in GEE-based classification workflows due to its regular revisit time and spectral depth.
+
+---
+
+## Reflection – What I Learned
+
+- Understanding sensors isn’t just about specs, but about **how and why** they’re used
+- Sentinel-2’s versatility makes it a go-to choice for many urban &amp; environmental questions
+- The real power lies in the way we apply the data, not just in the sensor itself
+
+&gt; This project helped me think methodologically — matching the right tool to the research goal.
+
+---
+
+## Reflection – Future Use &amp; Value
+
+- I see great potential to use Sentinel-2 in:
+  - Urban green infrastructure assessment
+  - Monitoring environmental justice patterns
+  - Integrating with SAR (e.g. Sentinel-1) for multimodal analysis
+
+&gt; The sensor’s richness makes it ideal for advanced research workflows.
+
+---
+
+## References
+
+Forkuor, G., Dimobe, K., Serme, I. and Tondoh, J.E., 2018. Landsat-8 vs. Sentinel-2: examining the added value of Sentinel-2’s red-edge bands to land-use and land-cover mapping in Burkina Faso. *GIScience &amp; Remote Sensing*, 55(3), pp.331–354.
+
+Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R., 2017. Google Earth Engine: Planetary-scale geospatial analysis for everyone. *Remote Sensing of Environment*, 202, pp.18–27. https://doi.org/10.1016/j.rse.2017.06.031
+
+European Space Agency (ESA) Sentinel-2 Mission Overview: https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-2
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
