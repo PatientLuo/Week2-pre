@@ -1,6 +1,6 @@
 ---
 title: "Sentinel-2: A Powerful Multispectral Sensor"
-author: "Luo Laoshi"
+author: "Luo Huangchen"
 date: "2025-03-24"
 output:
   xaringan::moon_reader:
@@ -104,7 +104,7 @@ Image source: Gorelick et al. (2017)
 
 ## References
 
-Forkuor, G., Dimobe, K., Serme, I. and Tondoh, J.E., 2018. Landsat-8 vs. Sentinel-2: examining the added value of Sentinel-2’s red-edge bands to land-use and land-cover mapping in Burkina Faso. *GIScience & Remote Sensing*, 55(3), pp.331–354.
+Forkuor, G., Dimobe, K., Serme, I. and Tondoh, J.E., 2018. Landsat-8 vs. Sentinel-2: examining the added value of Sentinel-2’s red-edge bands to land-use and land-cover mapping in Burkina Faso. *GIScience & Remote Sensing*, 55(3), pp.331–354.   
 
 Gorelick, N., Hancher, M., Dixon, M., Ilyushchenko, S., Thau, D. and Moore, R., 2017. Google Earth Engine: Planetary-scale geospatial analysis for everyone. *Remote Sensing of Environment*, 202, pp.18–27. https://doi.org/10.1016/j.rse.2017.06.031
 
